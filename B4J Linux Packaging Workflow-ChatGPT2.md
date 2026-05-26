@@ -165,10 +165,11 @@ Linux officially recommends:
 | XDG_CACHE_HOME  | cache          |
 
 Fallbacks:
-
+```
 ~/.config
 ~/.local/share
 ~/.cache
+```
 
 ## Recommended B4J XDG Implementation
 
