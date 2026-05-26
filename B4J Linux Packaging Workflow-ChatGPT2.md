@@ -192,7 +192,6 @@ NOT:
 /opt/MyApp/database.db
 ```
 Reason:
-
 - user writable
 - backups easier
 - no root permissions needed
@@ -238,7 +237,7 @@ error.log
 sync.log
 ```
 
-Multi-User Safety
+## Multi-User Safety
 
 If two Linux users use same machine:
 ```
@@ -249,7 +248,7 @@ Everything stays isolated automatically.
 
 ## Uninstall Behavior
 
-When uninstalling .deb:
+When uninstalling `.deb`:
 
 ### Automatically Removed
 ```
