@@ -106,6 +106,7 @@ backup/
 ```
 
 ### Cache
+```
 ~/.cache/MyApp/
 ```
 Example:
