@@ -93,12 +93,9 @@ And replace the old launcher with the new XDG‑aware one.
 
 ## 📌 Important Notes
 
-**Do not put writable directories inside the*** `.deb`. They would be created as root‑owned, and ordinary users would get permission errors.
-
-If your app must start with a default config file, include a template in `/usr/share/$APP_NAME/` and copy it to `$CONFIG_DIR` on first run if no config exists.
-
-For SQLite databases, store them in `$DATA_DIR` (persistent user data).
-
-Downloaded assets that can be re‑fetched should go into `$CACHE_DIR`; essential files that the user expects to keep go into `$DATA_DIR`.
+- **Do not put writable directories inside the*** `.deb`. They would be created as root‑owned, and ordinary users would get permission errors.
+- If your app must start with a default config file, include a template in `/usr/share/$APP_NAME/` and copy it to `$CONFIG_DIR` on first run if no config exists.
+- For SQLite databases, store them in `$DATA_DIR` (persistent user data).
+- Downloaded assets that can be re‑fetched should go into `$CACHE_DIR`; essential files that the user expects to keep go into `$DATA_DIR`.
 
 With this structure, your application will behave like a well‑behaved Linux citizen, and the `.deb` package will be cleanly installable by any user.
